@@ -46,6 +46,8 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown('<div style="text-align: Right;">By Developer.</div>', unsafe_allow_html=True)
+
 if menu == "Dashboard":
     n_rows = st.slider("Choose numbor of rowes to display " , min_value=5, max_value= len(df), step=1)
     columns_to_show= st.multiselect("Select columns to show", df.columns.to_list(), default= df.columns.to_list())
