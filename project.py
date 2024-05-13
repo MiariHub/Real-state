@@ -100,7 +100,7 @@ if menu == "Prediction":
     st.subheader("Predicted House Price")
     st.write(f"The predicted price of the house is {predicted_price[0]:.2f} New Taiwan Dollar/Ping.")
 if menu == "About":
-    st.sidebar.write("""
+    st.write("""
     ### About the Application
     This application predicts real estate prices using advanced machine learning techniques.
     Here you'll find detailed information on how to use the app, the data behind it, and the methods applied for price prediction.
