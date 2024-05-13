@@ -8,7 +8,7 @@ import joblib
 
 st.set_page_config(page_title="RealEstate!!!", page_icon=":bar_chart:",layout="wide")
 
-st.markdown("<h1 style='text-align: center; color: red;'>House Price Prediction Using AI</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>House Price Prediction Using AI</h1>", unsafe_allow_html=True)
 
 
 #st.title("House Price Prediction Using AI")
