@@ -8,9 +8,10 @@ import joblib
 
 st.set_page_config(page_title="RealEstate!!!", page_icon=":bar_chart:",layout="wide")
 
+st.markdown("<h1 style='text-align: center; color: red;'>House Price Prediction Using AI</h1>", unsafe_allow_html=True)
 
 
-st.title("House Price Prediction Using AI")
+#st.title("House Price Prediction Using AI")
 # Load the dataset
 
 df = pd.read_csv("Real estate valuation data set.csv")
