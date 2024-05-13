@@ -76,11 +76,12 @@ if menu == "Dashboard":
        fig_hist = px.histogram(df, x=histogram_featuer ) 
        st.plotly_chart(fig_hist)
 
-       st.subheader("Descriptive Statistics")
-       st.write(df.describe())
+      
+       
 
     with tab3:
         # User options to select data presentation
+       st.write(df.describe())
        analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
     
        if analysis_type == "Box Plot":
