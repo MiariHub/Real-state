@@ -31,7 +31,7 @@ if menu == "Home":
         st.write(' ')
     
 
-   st.markdown("""
+st.markdown("""
 <div style="text-align: justify;">
     Welcome to our state-of-the-art platform designed to predict real estate prices with precision. 
     Leveraging advanced machine learning techniques, particularly Linear Regression, we analyze 
