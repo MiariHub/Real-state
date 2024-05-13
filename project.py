@@ -82,7 +82,7 @@ if menu == "Dashboard":
         # User options to select data presentation
        analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
     
-        if analysis_type == "Box Plot":
+       if analysis_type == "Box Plot":
             # Allowing user to select a column for box plot
             column_to_plot = st.selectbox("Select Column for Box Plot", df.columns)
             fig = px.box(df, y=column_to_plot)
