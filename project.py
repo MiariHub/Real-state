@@ -77,7 +77,7 @@ if menu == "Dashboard":
        st.plotly_chart(fig_hist)
 
        st.subheader("Descriptive Statistics")
-        st.write(df.describe())
+       st.write(df.describe())
     
         # User options to select data presentation
         analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
