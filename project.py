@@ -32,21 +32,21 @@ if menu == "Home":
         st.write(' ')
     
 
-st.markdown("""
-<div style="text-align: justify;">
-    Welcome to our state-of-the-art platform designed to predict real estate prices with precision. 
-    Leveraging advanced machine learning techniques, particularly Linear Regression, we analyze 
-    comprehensive datasets sourced from Sindian District, New Taipei City, Taiwan. By considering 
-    key attributes such as transaction date, house age, proximity to amenities like transportation 
-    hubs and convenience stores, as well as geographic coordinates, our model provides accurate 
-    predictions of property prices. This predictive capability enables stakeholders in the real 
-    estate market to make informed decisions, whether it's buying, selling, or investing in properties. 
-    Join us as we redefine the future of real estate valuation, making property pricing more transparent, 
-    efficient, and reliable.
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown('<div style="text-align: Right;">By Developer.</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div style="text-align: justify;">
+        Welcome to our state-of-the-art platform designed to predict real estate prices with precision. 
+        Leveraging advanced machine learning techniques, particularly Linear Regression, we analyze 
+        comprehensive datasets sourced from Sindian District, New Taipei City, Taiwan. By considering 
+        key attributes such as transaction date, house age, proximity to amenities like transportation 
+        hubs and convenience stores, as well as geographic coordinates, our model provides accurate 
+        predictions of property prices. This predictive capability enables stakeholders in the real 
+        estate market to make informed decisions, whether it's buying, selling, or investing in properties. 
+        Join us as we redefine the future of real estate valuation, making property pricing more transparent, 
+        efficient, and reliable.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown('<div style="text-align: Right;">By Developer.</div>', unsafe_allow_html=True)
 
 if menu == "Dashboard":
     n_rows = st.slider("Choose numbor of rowes to display " , min_value=5, max_value= len(df), step=1)
