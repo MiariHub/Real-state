@@ -76,26 +76,26 @@ if menu == "Dashboard":
        fig_hist = px.histogram(df, x=histogram_featuer ) 
        st.plotly_chart(fig_hist)
 
-   st.subheader("Descriptive Statistics")
-    st.write(df.describe())
-
-    # User options to select data presentation
-    analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
-
-    if analysis_type == "Box Plot":
-        # Allowing user to select a column for box plot
-        column_to_plot = st.selectbox("Select Column for Box Plot", df.columns)
-        fig = px.box(df, y=column_to_plot)
-        st.plotly_chart(fig)
-
-    elif analysis_type == "Correlation Matrix":
-        # Compute correlation matrix
-        corr_matrix = df.corr()
-        fig = px.imshow(corr_matrix, text_auto=True, aspect="auto", labels=dict(color="Correlation"),
-                        x=corr_matrix.columns, y=corr_matrix.columns,
-                        color_continuous_scale='RdBu_r', origin='lower')
-        fig.update_xaxes(side="bottom")
-        st.plotly_chart(fig)
+       st.subheader("Descriptive Statistics")
+        st.write(df.describe())
+    
+        # User options to select data presentation
+        analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
+    
+        if analysis_type == "Box Plot":
+            # Allowing user to select a column for box plot
+            column_to_plot = st.selectbox("Select Column for Box Plot", df.columns)
+            fig = px.box(df, y=column_to_plot)
+            st.plotly_chart(fig)
+    
+        elif analysis_type == "Correlation Matrix":
+            # Compute correlation matrix
+            corr_matrix = df.corr()
+            fig = px.imshow(corr_matrix, text_auto=True, aspect="auto", labels=dict(color="Correlation"),
+                            x=corr_matrix.columns, y=corr_matrix.columns,
+                            color_continuous_scale='RdBu_r', origin='lower')
+            fig.update_xaxes(side="bottom")
+            st.plotly_chart(fig)
 
 if menu == "Prediction":
     
