@@ -19,7 +19,7 @@ df = pd.read_csv("Real estate valuation data set.csv")
 
 menu = st.sidebar.radio("Menu", ["Home", "Dashboard","Prediction"])
 if menu == "Home":
-col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         st.write(' ')
@@ -29,6 +29,7 @@ col1, col2, col3 = st.columns(3)
     
     with col3:
         st.write(' ')
+    
 
    st.markdown("""
 <div style="text-align: justify;">
