@@ -18,7 +18,7 @@ df = pd.read_csv("Real estate valuation data set.csv")
 
 
 
-menu = st.sidebar.radio("Menu", ["Home", "Dashboard","Prediction","About"])
+menu = st.sidebar.radio("Menu", ["Home", "About","Prediction","Dashboard"])
 if menu == "Home":
     col1, col2, col3 = st.columns(3)
     
