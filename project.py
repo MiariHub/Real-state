@@ -18,7 +18,7 @@ df = pd.read_csv("Real estate valuation data set.csv")
 
 
 
-menu = st.sidebar.radio("Menu", ["Home", "Dashboard","Prediction"])
+menu = st.sidebar.radio("Menu", ["Home", "Dashboard","Prediction","About"])
 if menu == "Home":
     col1, col2, col3 = st.columns(3)
     
@@ -99,7 +99,21 @@ if menu == "Prediction":
     
     st.subheader("Predicted House Price")
     st.write(f"The predicted price of the house is {predicted_price[0]:.2f} New Taiwan Dollar/Ping.")
-   
+if menu == "About":
+    st.sidebar.write("""
+    ### About the Application
+    This application predicts real estate prices using advanced machine learning techniques.
+    Here you'll find detailed information on how to use the app, the data behind it, and the methods applied for price prediction.
+    #### How to Use
+    - **Home**: Get a brief overview and introduction to our platform.
+    - **Dashboard**: Visualize different aspects of the real estate data through interactive charts and graphs.
+    - **Prediction**: Enter specific house features to receive a real-time price prediction.
+    #### Data Used
+    The data used in this application comes from the Sindian District, New Taipei City, Taiwan. It includes several features like transaction date, house age, distance to the nearest MRT station, number of convenience stores nearby, latitude, and longitude.
+    #### Prediction Methodology
+    The application uses a Linear Regression model trained on historical data to provide price predictions. The model takes into account various attributes of properties to make its predictions as accurate as possible.
+    """)
+
 
        
 
