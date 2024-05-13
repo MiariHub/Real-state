@@ -80,7 +80,7 @@ if menu == "Dashboard":
        st.write(df.describe())
     
         # User options to select data presentation
-        analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
+       analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
     
         if analysis_type == "Box Plot":
             # Allowing user to select a column for box plot
