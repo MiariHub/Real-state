@@ -89,7 +89,7 @@ if menu == "Dashboard":
             st.plotly_chart(fig)
 
         # Compute correlation matrix
-        elif analysis_type == "Correlation Matrix":
+       elif analysis_type == "Correlation Matrix":
             corr_matrix = df.corr()
             fig = px.imshow(corr_matrix, text_auto=True, aspect="auto", labels=dict(color="Correlation"),
                             x=corr_matrix.columns, y=corr_matrix.columns,
