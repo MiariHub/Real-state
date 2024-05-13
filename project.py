@@ -21,7 +21,8 @@ menu = st.sidebar.radio("Menu", ["Home", "Dashboard","Prediction"])
 
 if menu == "Home":
    st.image("pngegg (8).png", caption="Real Estate Prediction")
-   st.write(<div style="text-align: Justify;">"""
+   st.markdown("""
+<div style="text-align: justify;">
     Welcome to our state-of-the-art platform designed to predict real estate prices with precision. 
     Leveraging advanced machine learning techniques, particularly Linear Regression, we analyze 
     comprehensive datasets sourced from Sindian District, New Taipei City, Taiwan. By considering 
@@ -31,7 +32,8 @@ if menu == "Home":
     estate market to make informed decisions, whether it's buying, selling, or investing in properties. 
     Join us as we redefine the future of real estate valuation, making property pricing more transparent, 
     efficient, and reliable.
-   """, use_container_width=True)
+</div>
+""", unsafe_allow_html=True)
 
 if menu == "Dashboard":
     n_rows = st.slider("Choose numbor of rowes to display " , min_value=5, max_value= len(df), step=1)
