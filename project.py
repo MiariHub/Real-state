@@ -55,7 +55,7 @@ if menu == "Dashboard":
     col1, col2, col3  = st.columns(3)
 
     numarical_columns = df.select_dtypes(include=np.number).columns.to_list()
-    tab1, tab2 = st.tabs(["Scatter plot", "Histogram"])
+    tab1, tab2, tab3 = st.tabs(["Scatter plot", "Histogram","Descriptive Statistics"])
    
     
     with tab1 : 
@@ -78,7 +78,8 @@ if menu == "Dashboard":
 
        st.subheader("Descriptive Statistics")
        st.write(df.describe())
-    
+
+    with tab3:
         # User options to select data presentation
        analysis_type = st.selectbox("Select Analysis Type", ["Box Plot", "Correlation Matrix"])
     
