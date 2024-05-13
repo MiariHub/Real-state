@@ -87,9 +87,9 @@ if menu == "Dashboard":
             column_to_plot = st.selectbox("Select Column for Box Plot", df.columns)
             fig = px.box(df, y=column_to_plot)
             st.plotly_chart(fig)
-    
+
+        # Compute correlation matrix
         elif analysis_type == "Correlation Matrix":
-            # Compute correlation matrix
             corr_matrix = df.corr()
             fig = px.imshow(corr_matrix, text_auto=True, aspect="auto", labels=dict(color="Correlation"),
                             x=corr_matrix.columns, y=corr_matrix.columns,
