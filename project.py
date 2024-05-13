@@ -31,7 +31,7 @@ if menu == "Home":
     estate market to make informed decisions, whether it's buying, selling, or investing in properties. 
     Join us as we redefine the future of real estate valuation, making property pricing more transparent, 
     efficient, and reliable.
-   """)
+   """, use_container_width=True)
 
 if menu == "Dashboard":
     n_rows = st.slider("Choose numbor of rowes to display " , min_value=5, max_value= len(df), step=1)
