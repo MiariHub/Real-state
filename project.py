@@ -49,7 +49,7 @@ if menu == "Home":
     st.markdown('<div style="text-align: Right;">By Developer.</div>', unsafe_allow_html=True)
 
 if menu == "Dashboard":
-    n_rows = st.slider("Choose numbor of rowes to display " , min_value=5, max_value= len(df), step=1)
+    n_rows = st.slider("Choose number of rowes to display " , min_value=5, max_value= len(df), step=1)
     columns_to_show= st.multiselect("Select columns to show", df.columns.to_list(), default= df.columns.to_list())
     st.write(df[:n_rows][columns_to_show])
     col1, col2, col3  = st.columns(3)
