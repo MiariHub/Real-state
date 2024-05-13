@@ -8,7 +8,7 @@ import joblib
 st.title("House Price Prediction Using AI")
 # Load the dataset
 
-df = pd.read_csv("data\Real estate valuation data set.csv")
+df = pd.read_csv("Real estate valuation data set.csv")
 
 
 
