@@ -30,7 +30,6 @@ if menu == "Home":
     
     with col3:
         st.write(' ')
-st.sidebar.write("🔄 This app is continuously being improved and updated following Agile practices.")    
 
     st.markdown("""
     <div style="text-align: justify;">
@@ -137,6 +136,7 @@ if menu == "Prediction":
     
     st.subheader("Predicted House Price")
     st.write(f"The predicted price of the house is {predicted_price[0]:.2f} New Taiwan Dollar/Ping.")
+st.sidebar.write(" This app is continuously being improved and updated following Agile practices.")    
 
 
        
