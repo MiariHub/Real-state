@@ -32,7 +32,7 @@ if menu == "Home":
         st.write(' ')
 
     st.markdown("""
-    <div style="text-align: justify;"font-family: Times New Roman>
+    <div style="text-align: justify;font-family: Times New Roman">
         Welcome to our state-of-the-art platform designed to predict real estate prices with precision. 
         Leveraging advanced machine learning techniques, particularly Linear Regression, we analyze 
         comprehensive datasets sourced from Sindian District, New Taipei City, Taiwan. By considering 
