@@ -45,7 +45,7 @@ if menu == "Home":
     </div>
     """, unsafe_allow_html=True)
     
-    st.markdown('<div style="text-align: Right;">By Developer.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: Right;font-family: Times New Roman">By Developer.</div>', unsafe_allow_html=True)
 if menu == "About":
     st.write("""
     ### About the Application
